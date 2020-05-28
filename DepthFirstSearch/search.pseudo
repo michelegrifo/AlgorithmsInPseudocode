@@ -1,0 +1,6 @@
+procedure SEARCH(v) {
+    t <- {0} //inizializza l'insieme vuoto
+    for all v in V do mark v "new";
+    while there exists a vertex v in V marked "new" do
+        SEARCH (v);
+}

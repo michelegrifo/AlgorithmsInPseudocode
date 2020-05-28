@@ -1,0 +1,10 @@
+//procedura in cui sono presenti vertici già incontrati
+procedure SEARCH(v) {
+    mark v "old";
+    for each vertex w on L[v] do
+        if w is marked "new" then{
+            add (v, w) to T:
+            SEARCH(w)
+        }
+    end
+}
