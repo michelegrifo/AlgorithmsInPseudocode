@@ -1,0 +1,9 @@
+procedure int fibonacci(int n) {
+	(sia FIB un array di n interi)
+	int FIB[n];
+	FIB[1] <-- FIB[2] <-- 1;
+	for i = 3 to n do
+		FIB[i] <--FIB[i-1] + FIB[i-2];
+	end
+	return FIB[n];
+}

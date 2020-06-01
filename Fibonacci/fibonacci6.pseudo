@@ -1,0 +1,6 @@
+procedure int fibonacci (int n){
+	M <-- (1 0)
+		  (0 1)
+	potenzaDiMatrice(M, n-1);
+	return M[0][0];
+}
