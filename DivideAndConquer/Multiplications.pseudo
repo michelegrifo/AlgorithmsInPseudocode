@@ -1,0 +1,6 @@
+procedure multiplications(){
+    u <-- (a + b) * (c + d);
+    v <-- a * c;
+    w <-- b * d;
+    z <-- v * 2^n + (u - v - w) * 2^(n/2) + w;
+}

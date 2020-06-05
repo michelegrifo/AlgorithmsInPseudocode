@@ -1,0 +1,7 @@
+procedure MINMAX() {
+    MAX <-- any element in S;
+    FOR all other elements x in S do
+        if x > MAX then
+            MAX <-- x;
+    end    
+}

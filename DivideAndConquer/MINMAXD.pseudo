@@ -1,0 +1,10 @@
+procedure MINMAX (S){
+    if |S| = 2 then 
+        let S = {a,b}
+        return (MAX(a, b), MIN (a, b)):
+    else 
+        divide S into two subset S1, S2 each with half the elements:
+        (MAX1, MIN1) <-- MAXMIN(S1)
+        (MAX2, MIN2) <-- MAXMIN(S2)
+        return (MAX(max1, max2), MIN(min1, min2));
+}
