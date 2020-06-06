@@ -1,0 +1,18 @@
+procedure bool BinarySearchIter(Array L[], Elem x){
+	a <-- 1;
+	b <-- L length;
+	while (L[(a + b)/2] != x) do
+
+		m <-- (a + b)/2;;
+		if(L[m] > x) then
+			b <-- m - 1;
+		else 
+			a <-- m + 1;
+		
+		if(a > b) then	
+			return false;
+	end
+
+	return true;
+	
+}

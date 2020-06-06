@@ -1,0 +1,7 @@
+procedure bool SequentialSearch (List l, Elem x){
+	for each (y --> l) do
+		if (y == x)
+			return true;
+	end
+	return false;
+}

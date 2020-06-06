@@ -1,0 +1,17 @@
+procedure bool BinarySearchRic(Array L[], Elem x){
+	n <-- length L;
+
+	if(n == 0) then
+		return false;
+
+	i <-- (n/2)
+
+	if (L[i] == x) then 
+		return true;
+
+	else if (L[i] > x) then
+		return BinarySearchRic(L[1, i-1], x);
+
+	else 
+		return BinarySearchRic (L[i+1, n], x);	
+}
