@@ -1,0 +1,18 @@
+procedure Search(a, r){
+    if (any son of r is a leaf) then 
+        return r;
+    else{
+        let s_i be the ith son of r;
+        if (a <= L[r]) then 
+            return Search(a, s1);
+        else{
+            if (r has two sons or a <= M[r] then
+                return Search (a, s2);
+            else
+                return Search(a, s3);
+        }
+        
+
+    }
+
+}

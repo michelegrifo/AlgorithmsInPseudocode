@@ -1,0 +1,15 @@
+procedure ADDSON(v) {
+    create a new vertex v';
+    make the two rightmost sons of v the left and right sons of v';
+
+    if (v has no father) then{
+        create a new root r;
+        make v the left son and v' the right son of r;
+    }
+    else{
+        let f be the father of v;
+        make v' a son of f immediately to the right of v;
+        if (f has four sons) then   
+            ADDSON(f)
+    }
+}

@@ -1,0 +1,17 @@
+procedure DIVIDE (a, T){
+    on the path from ROOT[T] to the leaf labeled a remove all vertices except the leaf;
+    /*At this point T has been divided into two forests - the left forest, which
+    consists of all trees with leaves to the left of and including the leaf labeled a,
+    and the right forest, which consists of all trees with leaves to the right of a*/
+
+    while (there is more than one tree in the left forest) do
+        let T' and T'' be the two rightmost trees in the left forest;
+        IMPLANT(T', T'');
+    end
+
+    while (ther is more than one tree in the right forest) do
+        let T' and T'' be the two leftmost trees in the right forest;
+        IMPLANT(T', T'');
+    end
+
+}

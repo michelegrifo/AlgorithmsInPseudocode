@@ -1,0 +1,18 @@
+procedure Implant(T1, T2){
+    if (HEIGHT(T1) == HEIGHT(T2)) then{
+        create a new root r;
+        make ROOT[T1] and ROOT[T2] the left and right sons of r;
+    }
+    else{
+        wlg assume HEIGHT(T1) > HEIGHT(T2) otherwise
+        interchange T1 and T2 and interchange "left" and "right" in{
+            let v be the vertex on the rightmost path of T1 such that
+                DEPTH(v) = HEIGHT(T1) - HEIGHT(T2);
+            
+            let f be tha father of v;
+            make ROOT[T2] a son of f immediately to the right of v;
+            if (f now has four sons) then 
+                ADDSON(f);
+        } 
+    }
+}
