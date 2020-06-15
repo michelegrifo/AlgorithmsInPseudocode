@@ -1,0 +1,13 @@
+/*optimal storage on tapes*/
+
+procedure Store(n, m) {
+	//n is the number of programs and m the number of tapes
+	
+	Integer m, n, j
+	j <-- 0 //next tape to store on
+	for i <-- 1 to n do
+		print('append program', i, 'to permutation for tape', j)
+		j <-- (j + 1) % m;
+	repeat
+
+}

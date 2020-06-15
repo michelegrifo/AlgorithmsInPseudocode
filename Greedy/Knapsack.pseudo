@@ -1,0 +1,18 @@
+procedure Knapsack(P, W, M, X, n) {
+	/* p(1:n) and W(1:n) contain the profits and wights respectively of the n
+	objects ordered so tha P(i)/W(i) >= P(i + 1)/W(i + 1)
+	M is the knapsack size and X(1:n) is the solution vector */
+	
+	real P(1:n), W(1:n), X(1:n), M. cu;
+	Integer i, n;
+	X <-- 0 //initialize solution to zero
+	cu <-- M // cu = remainign knapsack capacity
+
+	for i <-- 1 to n do
+		if W(i) > cu the exit endif
+		X(i) <-- 1
+		cu <-- cu - W(i)
+	repeat
+	if i <= n the X(i) <-- cu/W(i) endif
+
+}

@@ -1,0 +1,9 @@
+procedure MatrixMul() {
+	for i <-- until n do m_ii <-- 0
+	for l <-- until n - 1 do
+		for i <-- 1 until n - 1 do
+			j <-- i + l
+			m_ij <-- MIN (m_ik + m_k+1,j + m_i-1 * r_k * r_j); when i <= k < r_j
+
+	write m_1n;
+}
